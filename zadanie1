@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>zadanko</title>
+	
+	
+<script>
+function info() {
+ var name = document.getElementById("name").value;
+ var surname = document.getElementById("surname").value;
+ var subject = document.getElementById("subject").value;
+ var przedmiot1 = document.getElementById("przedmiot1").value;
+ var przedmiot2 = document.getElementById("przedmiot2").value;
+ var przedmiot3 = document.getElementById("przedmiot3").value;
+ var ocena1 = document.getElementById("ocena1").value;
+ var ocena2 = document.getElementById("ocena2").value;
+ var ocena3 = document.getElementById("ocena3").value;
+
+ 
+ 
+ alert("Witaj " + name + " " + surname + " " + subject + " " + przedmiot1 + " " + ocena1 + " " + przedmiot2 + " " + ocena2 + " " + przedmiot3 + " " + ocena3)
+}
+	
+	function srednia(){
+		
+ var ocena1 = parseInt(prompt("OCENA1"));
+ var ocena2 = parseInt(prompt("OCENA2"));
+ var ocena3 = parseInt(prompt("OCENA3")); 
+		
+		document.write("Srednia to= "+(ocena1+ocena2+ocena3)/3);
+		
+
+	}
+	
+	</script>
+	
+	
+</head>
+<body>
+
+<table>
+ <tr>
+ <td>Imię</td>
+ <td><input id="name"></td>
+ <td>Nazwisko</td>
+ <td><input id="surname"></td>
+ <td>Kierunek</td>
+ <td><input id="subject"></td>
+ </tr>
+ <tr>
+ <td>==>Przedmiot1</td>
+ <td><input id="przedmiot1"></td>
+ <td>=> Ocena: </td>
+ <td><input id="ocena1"></td>
+ </tr>
+ <tr>
+ <td>==>Przedmiot2</td>
+ <td><input id="przedmiot2"></td>
+ <td>=> Ocena: </td>
+ <td><input id="ocena2"></td>
+ </tr>
+ <tr>
+ <td>==>Przedmiot3</td>
+ <td><input id="przedmiot3"></td>
+ <td>=> Ocena: </td>
+ <td><input id="ocena3"></td>
+ </tr>
+ </table>
+ <button onclick="info()">Pokaż info</button>
+ <button onclick="srednia()">Średnia</button>
+ 
+ <div id="wynik"></div>
+ 
+
+</body>
+</html>
